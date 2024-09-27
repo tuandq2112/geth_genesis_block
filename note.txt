@@ -1,0 +1,9 @@
+geth --dev --datadir ./datadir init genesis.json
+geth --dev --http --http.api eth,web3,net --http.corsdomain "https://remix.ethereum.org" 
+ 
+eth.sendTransaction({from:eth.accounts[0], to:"0x65409836C2744A50C94bb06F1aF282CfD3F560B9", value: web3.toWei(4, "ether")})
+
+
+
+eth.getTransaction("0x3ad9bb4fcdb01e09ab423baf6367ec399f326277c54c7b072cb6dd9824269553")
+eth.getTransaction("0x1169170bc965d5b4e04e0d1991c8ca37ec5fc99f81bae1415880cff8d88d4ab6")
